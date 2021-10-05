@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main(){
+
+float num[4];
+int x;
+float mean=0;
+float sum=0;
+
+printf("Enter your values:");
+
+    for (x = 0; x <= 4; x++) {
+scanf("%f", &num[x]);    
+sum=sum + num[x];
+  
+}
+
+int mode (float i[], int e){
+    int maxVal = 0;
+    int maxCount = 0;
+    int a, n;
+
+    for (a = 0; a < e; a++) {
+        int count = 0;
+    for (n = 0; n < e; n++) {
+        if (i[n] == i[a]){
+            count++; }
+    }
+    if (count > maxCount) {
+        maxCount = count;
+        maxVal = i[a];
+    }
+}
+    return maxVal;
+}
+    int e = 5;
+    for(int a=0; a < 5; a++) {
+   /* scanf("%d", &num[a]);*/
+}
+mean=sum/4;
+printf("%f\n", mean);
+printf("mode = %d\n", mode(num,e));
+
+
+  return(0);
+}
