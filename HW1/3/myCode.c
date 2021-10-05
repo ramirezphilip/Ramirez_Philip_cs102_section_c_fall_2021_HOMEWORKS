@@ -37,9 +37,26 @@ int mode (float i[], int e){
     for(int a=0; a < 5; a++) {
    /* scanf("%d", &num[a]);*/
 }
-mean=sum/4;
-printf("%f\n", mean);
+mean=sum/5;
+printf("mean = %f\n", mean);
 printf("mode = %d\n", mode(num,e));
+
+int p=0 , t=0 , temp=0;
+
+
+
+for(p=0 ; p<5 ; p++) {
+    for(t=0 ; t<5-1 ; t++) {
+        if(num[t]>num[t+1])
+{
+        temp = num[t];
+        num[t] = num[t+1];
+        num[t+1] = temp;
+}
+}
+}
+    printf("median = %.0f\n", num[2]);
+
 
 
   return(0);

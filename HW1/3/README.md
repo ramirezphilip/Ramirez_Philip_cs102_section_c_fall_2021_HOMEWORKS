@@ -1,1 +1,3 @@
-# README.md for hw-1 / problem-1
+# README.md for hw-1-3
+
+mean, median and mode
